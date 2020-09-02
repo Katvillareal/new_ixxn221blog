@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -71,6 +72,12 @@ float: left;
   flex: 1;
   }
   
+
+  .tuttext{
+
+  margin-right: 150px;
+  margin-left: 80px;
+  }
 
 .row1{
   display: flex;
@@ -151,39 +158,48 @@ float: left;
         flex: 1;
         }
     
-        .Weekcontainer{
-          display: flex;
-          justify-content: space-between;
-          margin: 20px;
-        }
+    
 
-    .week2pic1{
-      background-color: white;
-      margin: 20px;
-      padding: 20px;
+   
+      * {box-sizing: border-box}
+      .mySlides1, .mySlides2, .mySlides3{display: none}
+      img {vertical-align: middle;}
       
-      order: 1;
-      flex: 1;
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
       }
       
-      .week2pic2{
-      background-color: white;
-      margin: 20px;
-      padding: 20px;
-  
-      order: 2;
-      flex: 1;
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
       }
       
-      .week2pic3{
-      background-color: white;
-      margin: 20px;
-      padding: 20px;
-      
-      order: 3;
-      flex: 1;
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        
       }
-
+      
+      /* On hover, add a grey background color */
+      .prev:hover, .next:hover {
+        background-color: #f1f1f1;
+        color: black;
+      }
    
   
   @media (max-width: 600px){
