@@ -79,6 +79,8 @@ float: left;
   margin-left: 80px;
   }
 
+
+
 .row1{
   display: flex;
   justify-content: space-between;
@@ -120,6 +122,19 @@ float: left;
     flex: 1;
     }
 
+  .Weekboxes1 :hover img {  /* hover zoom */
+      transform: scale(1.1);
+  }
+  .Weekboxes2 :hover img {  /* hover zoom */
+      transform: scale(1.1);
+  }
+  .Weekboxes3 :hover img {  /* hover zoom */
+    transform: scale(1.1);
+}
+.Weekboxes4 :hover img {  /* hover zoom */
+    transform: scale(1.1);
+}
+
     .row2{
       display: flex;
       justify-content: space-between;
@@ -157,8 +172,71 @@ float: left;
         order: 4;
         flex: 1;
         }
+
+        .Weekboxes5 :hover img {  /* hover zoom */
+          transform: scale(1.1);
+      }
+      .Weekboxes6 :hover img {  /* hover zoom */
+          transform: scale(1.1);
+      }
+      .Weekboxes7 :hover img {  /* hover zoom */
+        transform: scale(1.1);
+    }
+    .Weekboxes8 :hover img {  /* hover zoom */
+        transform: scale(1.1);
+    }
     
+        .row3{
+          display: flex;
+          justify-content: space-between;
+          margin: 20px;
+        }
+        
     
+        .Weekboxes9{
+          background-color: white;
+          margin: 20px;
+          padding: 20px;
+          order: 3;
+          flex: 1;
+          }
+        
+          .Weekboxes10{
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            order: 4;
+            flex: 1;
+            }
+          .Weekboxes11{
+          background-color: white;
+          margin: 20px;
+          padding: 20px;
+          order: 3;
+          flex: 1;
+          }
+        
+          .Weekboxes12{
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            order: 4;
+            flex: 1;
+            }
+        
+            .Weekboxes9 :hover img {  /* hover zoom */
+              transform: scale(1.1);
+          }
+          .Weekboxes10 :hover img {  /* hover zoom */
+              transform: scale(1.1);
+          }
+          .Weekboxes11 :hover img {  /* hover zoom */
+            transform: scale(1.1);
+        }
+        .Weekboxes12:hover img {  /* hover zoom */
+            transform: scale(1.1);
+        }
+        
 
    
       * {box-sizing: border-box}
@@ -218,6 +296,12 @@ float: left;
         flex-direction: column;
         margin: 50px;
         }
+
+        .row3{
+          display: flex;
+          flex-direction: column;
+          margin: 50px;
+          }
 
         .profile{
           display: flex;
