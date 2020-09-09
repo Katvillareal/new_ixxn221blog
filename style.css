@@ -240,7 +240,7 @@ float: left;
 
    
       * {box-sizing: border-box}
-      .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+      .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8 {display: none}
       img {vertical-align: middle;}
       
       /* Slideshow container */
