@@ -44,8 +44,36 @@ float: left;
   width: 100%;
   height: 50%; 
   background-color: #EED3BA;
-  
-  
+ 
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 90px;
+  left: 10px;
+  overflow-x: hidden;
+  padding: 20px 0;
+
+}
+
+.sidenav a {
+  padding: 20px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
 }
 
 
@@ -71,14 +99,72 @@ float: left;
   order: 2;
   flex: 1;
   }
-  
 
-  .tuttext{
-
-  margin-right: 150px;
-  margin-left: 80px;
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .week1tut1{
+    margin: auto;
+    padding-top: 80px;
+    margin-right: 75px;
   }
 
+  .week1tut2{
+
+    margin: auto;
+    padding-top: 100px;
+    margin-right: 75px;
+  }
+
+  .week2tut3{
+
+    margin: auto;
+    padding-top: 100px;
+    margin-right: 75px;
+  }
+
+  .week2tut4{
+
+    margin: auto;
+    padding-top:80px;
+    margin-right: 75px;
+  }
+
+  .week3tut5{
+
+    margin: auto;
+    padding-top: 360px;
+    margin-right: 75px;
+  }
+
+  .week3tut6{
+
+    margin: auto;
+    padding-top: 310px;
+    margin-right: 75px;
+  }
+
+  .week4tut7{
+
+    margin: auto;
+    padding-top: 300px;
+    margin-right: 75px;
+  }
+
+  .week4tut8{
+
+    margin: auto;
+    padding-top: 530px;
+    margin-right: 75px;
+  }
 
 
 .row1{
@@ -245,11 +331,12 @@ float: left;
       
       /* Slideshow container */
       .slideshow-container {
-        max-width: 1000px;
+        width: 50%;
         position: relative;
-        margin: auto;
+        margin: 100px;
+        margin-right:50px ;
+       float:left;
       }
-      
       /* Next & previous buttons */
       .prev, .next {
         cursor: pointer;
@@ -314,4 +401,11 @@ float: left;
             display: flex;
             flex-direction: column;
             margin: 50px;
+            }
+
+
+
+            @media screen and (max-height: 450px) {
+              .sidenav {padding-top: 15px;}
+              .sidenav a {font-size: 18px;}
             }
