@@ -4,49 +4,47 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* font */
 h5{
     font-size:20px;
+      color:#E3BC9A;
+    
 }
-
+ 
+/* nav bar */
 .topnav {
   overflow: hidden;
-  background-color: #FFF0E2;
+  background-color: #EBCAA3;
   margin-top: -18px;
-  padding: 20px;
+  padding: 15px;
  
 }
-
+/* nav bar */
 .topnav a {
   float: right;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 14px 20px;
+  margin-right:30px;
+  margin-top:30px;
   text-decoration: none;
   font-size: 17px;
 }
 
+/* nav bar hover effect */
 .topnav a:hover {
   background-color: white;
   color: black;
 }
 
-
+/* logo */
 .namelogo{
 float: left;
-  margin-top: -115px;
+  margin-top: -83px;
+  margin-left: -30px;
   padding: 40px;
 }
 
-.brownbackground {
-  position: absolute;
-  top: 80;
-  left: 0;
-  width: 100%;
-  height: 50%; 
-  background-color: #EED3BA;
- 
-}
-
+/* contents bar */
 .sidenav {
   width: 130px;
   position: fixed;
@@ -57,7 +55,7 @@ float: left;
   padding: 20px 0;
 
 }
-
+/* contents bar */
 .sidenav a {
   padding: 20px 8px 20px 16px;
   text-decoration: none;
@@ -65,23 +63,25 @@ float: left;
   color: black;
   display: block;
 }
-
+/* contents bar */
 .sidenav a:hover {
   color: #064579;
 }
-
+/* contents bar */
 .main {
   margin-left: 140px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
+/* profile class*/
 
 .profile{
   display: flex;
   justify-content: space-between;
   margin: 100px 100px;
 }
+/* profile photo */
 
 .profilepic{
   background-color: white;
@@ -92,6 +92,7 @@ float: left;
   flex: 1;
   }
   
+  /* about me description */
   .aboutme{
   background-color: white;
   margin: 20px;
@@ -100,73 +101,30 @@ float: left;
   flex: 1;
   }
 
-  hr {
+  /*  Line seperating blog post*/
+  hr { 
     display: block;
     height: 1px;
     border: 0;
-    border-top: 2px solid #ccc;
+    border-top: 2px solid #E3BC9A;
     margin: 1em 0;
     padding: 0;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
-  .week1tut1{
-    margin: auto;
-    padding-top: 80px;
-    margin-right: 75px;
-  }
 
-  .week1tut2{
+/* blogpost */
+
+  .blogpost{
 
     margin: auto;
-    padding-top: 100px;
-    margin-right: 75px;
-  }
-
-  .week2tut3{
-
-    margin: auto;
-    padding-top: 100px;
-    margin-right: 75px;
-  }
-
-  .week2tut4{
-
-    margin: auto;
-    padding-top:80px;
-    margin-right: 75px;
-  }
-
-  .week3tut5{
-
-    margin: auto;
-    padding-top: 360px;
-    margin-right: 75px;
-  }
-
-  .week3tut6{
-
-    margin: auto;
-    padding-top: 310px;
-    margin-right: 75px;
-  }
-
-  .week4tut7{
-
-    margin: auto;
-    padding-top: 300px;
-    margin-right: 75px;
-  }
-
-  .week4tut8{
-
-    margin: auto;
-    padding-top: 530px;
+    padding-top: 110px;
     margin-right: 75px;
   }
 
 
+  /* main page, first row of week boxes */
 .row1{
   display: flex;
   justify-content: space-between;
@@ -208,6 +166,8 @@ float: left;
     flex: 1;
     }
 
+    /* hover effect */
+
   .Weekboxes1 :hover img {  /* hover zoom */
       transform: scale(1.1);
   }
@@ -221,6 +181,7 @@ float: left;
     transform: scale(1.1);
 }
 
+/* second page, first row of week boxes */
     .row2{
       display: flex;
       justify-content: space-between;
@@ -258,7 +219,8 @@ float: left;
         order: 4;
         flex: 1;
         }
-
+        
+/* hover effect */
         .Weekboxes5 :hover img {  /* hover zoom */
           transform: scale(1.1);
       }
@@ -271,7 +233,8 @@ float: left;
     .Weekboxes8 :hover img {  /* hover zoom */
         transform: scale(1.1);
     }
-    
+
+    /* main page, third row of week boxes */
         .row3{
           display: flex;
           justify-content: space-between;
@@ -309,7 +272,7 @@ float: left;
             order: 4;
             flex: 1;
             }
-        
+        /* hover effect */
             .Weekboxes9 :hover img {  /* hover zoom */
               transform: scale(1.1);
           }
@@ -324,19 +287,21 @@ float: left;
         }
         
 
+   /* slideshow */
    
       * {box-sizing: border-box}
-      .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8 {display: none}
+      .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9,.mySlides10,.mySlides11,.mySlides12 {display: none}
       img {vertical-align: middle;}
       
       /* Slideshow container */
       .slideshow-container {
         width: 50%;
         position: relative;
-        margin: 100px;
+        margin: 150px;
         margin-right:50px ;
        float:left;
       }
+      
       /* Next & previous buttons */
       .prev, .next {
         cursor: pointer;
@@ -370,25 +335,26 @@ float: left;
   @media (max-width: 600px){
     
 
-  
+    /* main page, first row of week boxes. Will go under each other when page is smaller */
     .row1{
     display: flex;
     flex-direction: column;
     margin: 50px;
     }
    
-
+ /* main page, second row of week boxes. Will go under each other when page is smaller */
       .row2{
         display: flex;
         flex-direction: column;
         margin: 50px;
         }
-
+ /* main page, third row of week boxes. Will go under each other when page is smaller */
         .row3{
           display: flex;
           flex-direction: column;
           margin: 50px;
           }
+
 
         .profile{
           display: flex;
