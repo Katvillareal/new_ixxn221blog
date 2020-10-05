@@ -11,18 +11,34 @@
   <body>
 
 
+    <nav>
 
-    <div class="topnav">
-    <a href="#Contact">Contact</a>
-    <a href="#Portfolio">Portfolio</a>
-    <a href="reflections.html">Reflections</a>
-    <a href="index.html">Home</a>
-  </div>
+      <div class="namelogo">
+        <img src="namelogo.png" class="logo" alt="Me" width="40%">
+      </div>
 
-  <!-- logo-->
-  <div class="namelogo">
-    <img src="namelogo.png" class="logo" alt="Me" width="40%">
-  </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="reflections.html">Reflections</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
 
 
 
@@ -104,7 +120,34 @@
 
 
 <script>
-  var slideIndex = 1;
+
+ // nav bar javascript
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = nav.querySelectorAll('li');
+
+    // Toggle the navbar
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    // Add KeyFrame to the lists
+    navLinks.forEach((list, index) => {
+        if (list.style.animation) {
+            list.style.animation = '';
+        } else {
+            list.style.animation = `navLinkFade .6s ease-in-out forwards ${index / 6 + .4}s`;
+        }
+    })
+    // Add Toggle Class
+    burger.classList.toggle('toggle');
+    });
+}
+navSlide();
+
+
+ //slideshow javascrip
+var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -130,6 +173,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
 
 </script>
 

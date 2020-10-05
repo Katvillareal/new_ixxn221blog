@@ -13,18 +13,35 @@
 
 
   <!-- Navbar  -->
-  <div class="topnav">
-    <a href="#Contact">Contact</a>
-    <a href="#Portfolio">Portfolio</a>
-    <a href="#Reflections">Reflections</a>
-    <a href="index.html">Home</a>
-  </div>
+  <nav>
+
+    <div class="namelogo">
+      <img src="namelogo.png" class="logo" alt="Me" width="40%">
+    </div>
 
 
-  <!-- logo-->
-  <div class="namelogo">
-    <img src="namelogo.png" class="logo" alt="Me" width="40%">
-  </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="reflections.html">Reflections</a>
+      </li>
+      <li>
+        <a href="#">Portfolio</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+
 
 
 
@@ -647,6 +664,33 @@ I really liked how it turned out but having all 20 tutorials on the side was a b
   <!-- javacript-->
 
   <script>
+
+// nav bar javasript
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = nav.querySelectorAll('li');
+
+    // Toggle the navbar
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    // Add KeyFrame to the lists
+    navLinks.forEach((list, index) => {
+        if (list.style.animation) {
+            list.style.animation = '';
+        } else {
+            list.style.animation = `navLinkFade .6s ease-in-out forwards ${index / 6 + .4}s`;
+        }
+    })
+    // Add Toggle Class
+    burger.classList.toggle('toggle');
+    });
+}
+navSlide();
+
+  // slideshow javascript
+
     var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1,1,1, 1, 1 ];
     var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10", "mySlides11", "mySlides12", "mySlides13", "mySlides14", "mySlides15", "mySlides16", "mySlides17"]
     showSlides(1, 0);
