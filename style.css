@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  padding:8px 4px 12px 4px;
 }
 
 /* font */
@@ -10,6 +11,7 @@ h5{
       color:#E3BC9A;
     
 }
+
  
 /* nav bar */
 .topnav {
@@ -161,6 +163,7 @@ float: left;
   padding: 20px;
   order: 2;
   flex: 1;
+  font-size: 16px;
   }
 
   /*  Line seperating blog post*/
@@ -179,12 +182,14 @@ float: left;
 /* blogpost */
 
   .blogpost{
-
     margin: auto;
     padding-top: 110px;
     margin-right: 75px;
+ 
   }
-
+  p {
+    font-size: 16px;
+  }
 
    /* slideshow */
    
@@ -272,22 +277,6 @@ float: left;
 }
 
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -323,7 +312,7 @@ h2{
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .slprev, .slnext,.text {font-size: 11px}
+  .prev, .next,.text {font-size: 11px}
 }
   
   @media (max-width: 600px){
@@ -362,10 +351,37 @@ h2{
             flex-direction: column;
             margin: 50px;
             }
+.blogpost{
+  text-align:center; 
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: 150px;
+  margin-left:0px ;
+ float:left;
+}
+
+.sidenav{
+  display: none;
+}
+
+.namelogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
 
 
 
+
+ 
             @media screen and (max-height: 450px) {
               .sidenav {padding-top: 15px;}
               .sidenav a {font-size: 18px;}
             }
+
+
+          
