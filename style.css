@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  padding:8px 4px 12px 4px;
+
 }
 
 /* font */
@@ -369,12 +369,37 @@ h2{
 }
 
 .namelogo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
 
+  margin-top: -110px;
+  margin-left: 25%;
+  padding: 40px;
+  width: 100%;
+}
+  
 
+/* nav bar */
+.topnav {
+  overflow: hidden;
+  background-color: #EBCAA3;
+  padding-top: 40px;
+ 
+}
+/* nav bar */
+.topnav a {
+text-align: center;
+  color: white;
+  text-align: center;
+  margin-right:40px;
+  margin-top:30px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* nav bar hover effect */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
 
 
  
