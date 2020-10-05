@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
   <html>
 
   <head>
@@ -12,21 +12,18 @@
 
 
 
-    <!-- Navbar  -->
     <div class="topnav">
-      <a href="#Contact">Contact</a>
-      <a href="#Portfolio">Portfolio</a>
-      <a href="reflections.html">Reflections</a>
-      <a href="index.html">Home</a>
-    </div>
+    <a href="#Contact">Contact</a>
+    <a href="#Portfolio">Portfolio</a>
+    <a href="reflections.html">Reflections</a>
+    <a href="index.html">Home</a>
+  </div>
 
+  <!-- logo-->
+  <div class="namelogo">
+    <img src="namelogo.png" class="logo" alt="Me" width="40%">
+  </div>
 
-
-
-    <!-- logo-->
-    <div class="namelogo">
-      <img src="namelogo.png" class="logo" alt="Me" width="40%">
-    </div>
 
 
 
@@ -58,80 +55,83 @@
 
     </div>
 
+<div>
+    <h2>LATEST BLOG POST</h2>
+</div>
+    
 
-    <!-- reflection weeks-->
 
+  <!-- slide show for homepage :latest blog post-->
+    <div class="slideshow-container-homepage">
 
+      <div class="mySlides fade">
 
-    <div class="row1">
+        <img src="tut11pic1.png" style="width:100%">
 
-      <div class="Weekboxes1">
-        <a href="reflections.html#week1"><img src="week1.png" alt="week1" style="width:100%"></a>
-        <h3>Tutorial 1/2</h3>
       </div>
-
-      <div class="Weekboxes2">
-        <a href="reflections.html#week2"><img src="week2.png" alt="week2" style="width:100%"></a>
-        <h3>Tutorial 3/4</h3>
+      
+      <div class="mySlides fade">
+ 
+        <img src="tut2pic1.png" style="width:100%">
+    
       </div>
-      <div class="Weekboxes3">
-        <a href="reflections.html"><img src="week3.png" alt="week3" style="width:100%"></a>
-        <h3>Tutorial 5/6</h3>
+      
+      <div class="mySlides fade">
+
+        <img src="tut3pic1.png" style="width:100%">
+ 
       </div>
-      <div class="Weekboxes4">
-        <a href="reflections.html"><img src="week4.png" alt="week3" style="width:100%"></a>
-        <h3>Tutorial 7/8</h3>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
       </div>
+      <br>
+      <div class="latestpostentry">
+        <h5>Tutorial 22 <br> 8th October 2020</h5>
+        <p>
+          I started to work on the contents bar on my reflections page again. 
+  <br>
+  I originally had just a list tutorials on the side, but I didn't like how it looked as it looked too crowded and messy. 
+  <br>
+  So I decided to have the contents bar pop out on the side. When you hover over a rectangles on the side and it slides out. 
+  <br>
+  I really liked how it turned out but having all 20 tutorials on the side was a bit much so I'm going to  When you hover over the rectangles, it will slide out and reveal "week 1 - week 11" and if you click on it, it will bring you to the first blog post for that week
+        </p>
+  
 
-    </div>
-
-
-    <div class="row2">
-
-      <div class="Weekboxes5">
-        <a href="reflections.html"><img src="week5.png" alt="week5" style="width:100%"></a>
-        <h3>Tutorial 9/10</h3>
-      </div>
-      <div class="Weekboxes6">
-        <a href="reflections.html"><img src="week6.png" alt="week6" style="width:100%"></a>
-        <h3>Tutorial 11/12</h3>
-      </div>
-      <div class="Weekboxes7">
-        <a href="reflections.html"> <img src="week7.png" alt="week7" style="width:100%"></a>
-        <h3>Tutorial 13/14</h3>
-      </div>
-      <div class="Weekboxes8">
-        <a href="reflections.html"> <img src="week8.png" alt="week8" style="width:100%"></a>
-        <h3>Tutorial 15/16</h3>
-      </div>
-
-    </div>
+      
 
 
-    <div class="row3">
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
 
-      <div class="Weekboxes9">
-        <a href="reflections.html"><img src="week9.png" alt="week1" style="width:100%"></a>
-        <h3>Tutorial 17/18</h3>
-      </div>
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-      <div class="Weekboxes10">
-        <a href="reflections.html"><img src="week10.png" alt="week10" style="width:100%"></a>
-        <h3>Tutorial 19/20</h3>
-      </div>
-      <div class="Weekboxes11">
-        <a href="reflections.html"><img src="week11.png" alt="week11" style="width:100%"></a>
-        <h3>Tutorial 21/22</h3>
-      </div>
-      <div class="Weekboxes12">
-        <a href="reflections.html"> <img src="week12.png" alt="week12" style="width:100%"></a>
-        <h3>Tutorial 23/24</h3>
-      </div>
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    </div>
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length} ;
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 
-
-
+</script>
 
   </body>
 

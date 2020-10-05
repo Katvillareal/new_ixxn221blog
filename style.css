@@ -45,33 +45,95 @@ float: left;
 }
 
 /* contents bar */
-.sidenav {
-  width: 130px;
+#mySidenav a {
   position: fixed;
-  z-index: 1;
-  top: 90px;
-  left: 10px;
-  overflow-x: hidden;
-  padding: 20px 0;
-
-}
-/* contents bar */
-.sidenav a {
-  padding: 20px 8px 20px 16px;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
   text-decoration: none;
-  font-size: 15px;
-  color: black;
-  display: block;
+  font-size: 16px;
+  color: white;
+  border-radius: 0 5px 5px 0;
 }
-/* contents bar */
-.sidenav a:hover {
-  color: #064579;
+
+#mySidenav a:hover {
+  left: 0;
 }
-/* contents bar */
-.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+
+#wk1 {
+  top: 80px;
+  background-color: #EBCAA3;
+}
+
+#wk2 {
+  top: 130px;
+  background-color: #EBCAA3;
+}
+
+#wk3 {
+  top: 180px;
+  background-color: #EBCAA3;
+}
+
+#wk4 {
+  top: 230px;
+  background-color: #EBCAA3;
+}
+
+#wk5 {
+  top: 280px;
+  background-color: #EBCAA3;
+}
+
+#wk6 {
+  top: 330px;
+  background-color: #EBCAA3;
+}
+
+#wk7 {
+  top: 380px;
+  background-color: #EBCAA3;
+}
+
+#wk8 {
+  top: 430px;
+  background-color: #EBCAA3
+}
+#wk9 {
+  top: 480px;
+  background-color: #EBCAA3;
+}
+
+#wk10 {
+  top: 530px;
+  background-color: #EBCAA3;
+}
+
+#wk11 {
+  top: 580px;
+  background-color: #EBCAA3;
+}
+
+
+#about {
+  top: 880px;
+  background-color: #E3BC9A;
+}
+
+#blog {
+  top: 930px;
+  background-color: #E3BC9A;
+}
+
+#projects {
+  top: 980px;
+  background-color: #E3BC9A;
+}
+
+#contact {
+  top: 1030px;
+  background-color: #E3BC9A
 }
 
 /* profile class*/
@@ -124,173 +186,10 @@ float: left;
   }
 
 
-  /* main page, first row of week boxes */
-.row1{
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;}
-
-.Weekboxes1{
-  background-color: white;
-  margin: 20px;
-  padding: 20px;
-  padding-top: 20px;
-  order: 1;
-  flex: 1;
-  }
-  
-  .Weekboxes2{
-  background-color: white;
-  margin: 20px;
-  padding: 20px;
-  padding-top: 20px;
-  order: 2;
-  flex: 1;
-  }
-  
-  .Weekboxes3{
-  background-color: white;
-  margin: 20px;
-  padding: 20px;
-  padding-top: 20px;
-  order: 3;
-  flex: 1;
-  }
-
-  .Weekboxes4{
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    padding-top: 20px;
-    order: 4;
-    flex: 1;
-    }
-
-    /* hover effect */
-
-  .Weekboxes1 :hover img {  /* hover zoom */
-      transform: scale(1.1);
-  }
-  .Weekboxes2 :hover img {  /* hover zoom */
-      transform: scale(1.1);
-  }
-  .Weekboxes3 :hover img {  /* hover zoom */
-    transform: scale(1.1);
-}
-.Weekboxes4 :hover img {  /* hover zoom */
-    transform: scale(1.1);
-}
-
-/* second page, first row of week boxes */
-    .row2{
-      display: flex;
-      justify-content: space-between;
-      margin: 20px;
-    }
-    
-
-    .Weekboxes5{
-      background-color: white;
-      margin: 20px;
-      padding: 20px;
-      order: 3;
-      flex: 1;
-      }
-    
-      .Weekboxes6{
-        background-color: white;
-        margin: 20px;
-        padding: 20px;
-        order: 4;
-        flex: 1;
-        }
-      .Weekboxes7{
-      background-color: white;
-      margin: 20px;
-      padding: 20px;
-      order: 3;
-      flex: 1;
-      }
-    
-      .Weekboxes8{
-        background-color: white;
-        margin: 20px;
-        padding: 20px;
-        order: 4;
-        flex: 1;
-        }
-        
-/* hover effect */
-        .Weekboxes5 :hover img {  /* hover zoom */
-          transform: scale(1.1);
-      }
-      .Weekboxes6 :hover img {  /* hover zoom */
-          transform: scale(1.1);
-      }
-      .Weekboxes7 :hover img {  /* hover zoom */
-        transform: scale(1.1);
-    }
-    .Weekboxes8 :hover img {  /* hover zoom */
-        transform: scale(1.1);
-    }
-
-    /* main page, third row of week boxes */
-        .row3{
-          display: flex;
-          justify-content: space-between;
-          margin: 20px;
-        }
-        
-    
-        .Weekboxes9{
-          background-color: white;
-          margin: 20px;
-          padding: 20px;
-          order: 3;
-          flex: 1;
-          }
-        
-          .Weekboxes10{
-            background-color: white;
-            margin: 20px;
-            padding: 20px;
-            order: 4;
-            flex: 1;
-            }
-          .Weekboxes11{
-          background-color: white;
-          margin: 20px;
-          padding: 20px;
-          order: 3;
-          flex: 1;
-          }
-        
-          .Weekboxes12{
-            background-color: white;
-            margin: 20px;
-            padding: 20px;
-            order: 4;
-            flex: 1;
-            }
-        /* hover effect */
-            .Weekboxes9 :hover img {  /* hover zoom */
-              transform: scale(1.1);
-          }
-          .Weekboxes10 :hover img {  /* hover zoom */
-              transform: scale(1.1);
-          }
-          .Weekboxes11 :hover img {  /* hover zoom */
-            transform: scale(1.1);
-        }
-        .Weekboxes12:hover img {  /* hover zoom */
-            transform: scale(1.1);
-        }
-        
-
    /* slideshow */
    
       * {box-sizing: border-box}
-      .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9,.mySlides10,.mySlides11,.mySlides12 {display: none}
+      .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9,.mySlides10,.mySlides11,.mySlides12,.mySlides13,.mySlides14 ,.mySlides15 ,.mySlides16,.mySlides17{display: none}
       img {vertical-align: middle;}
       
       /* Slideshow container */
@@ -330,7 +229,102 @@ float: left;
         background-color: #f1f1f1;
         color: black;
       }
-   
+
+
+
+/* homepage slideshow */
+
+
+/* Slideshow container */
+.slideshow-container-homepage {
+  width: 50%;
+        position: relative;
+        margin: 70px;
+      
+       float:left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.latestpostentry{
+  margin: auto;
+  padding-top: 40px;
+  margin-right: 75px;
+
+}
+
+/* font */
+h2{
+  font-size:30px;
+    color:#E3BC9A;
+    text-align: center;
+  
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .slprev, .slnext,.text {font-size: 11px}
+}
   
   @media (max-width: 600px){
     
