@@ -23,12 +23,7 @@ h3 {
 
 /* logo  */
 
-nav .namelogo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-right: 300px;
-}
+nav .namelogo {}
 
 nav {
     display: flex;
