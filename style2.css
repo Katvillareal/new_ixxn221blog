@@ -1,0 +1,554 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* font */
+
+h3 {
+    color: #E3BC9A;
+}
+
+
+/* nav bar */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    text-transform: capitalize;
+    min-height: 10vh;
+    background-color: #EBCAA3;
+}
+
+
+/* logo  */
+
+.namelogo {
+    justify-content: flex-start;
+    padding-right: 200px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+/* contents bar */
+
+#mySidenav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#wk1 {
+    top: 80px;
+    background-color: #EBCAA3;
+}
+
+#wk2 {
+    top: 130px;
+    background-color: #EBCAA3;
+}
+
+#wk3 {
+    top: 180px;
+    background-color: #EBCAA3;
+}
+
+#wk4 {
+    top: 230px;
+    background-color: #EBCAA3;
+}
+
+#wk5 {
+    top: 280px;
+    background-color: #EBCAA3;
+}
+
+#wk6 {
+    top: 330px;
+    background-color: #EBCAA3;
+}
+
+#wk7 {
+    top: 380px;
+    background-color: #EBCAA3;
+}
+
+#wk8 {
+    top: 430px;
+    background-color: #EBCAA3
+}
+
+#wk9 {
+    top: 480px;
+    background-color: #EBCAA3;
+}
+
+#wk10 {
+    top: 530px;
+    background-color: #EBCAA3;
+}
+
+#wk11 {
+    top: 580px;
+    background-color: #EBCAA3;
+}
+
+#about {
+    top: 880px;
+    background-color: #E3BC9A;
+}
+
+#blog {
+    top: 930px;
+    background-color: #E3BC9A;
+}
+
+#projects {
+    top: 980px;
+    background-color: #E3BC9A;
+}
+
+#contact {
+    top: 1030px;
+    background-color: #E3BC9A
+}
+
+
+/* profile class*/
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 100px;
+}
+
+
+/* profile photo */
+
+.profilepic {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    order: 1;
+    flex: 1;
+}
+
+
+/* about me description */
+
+.aboutme {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    order: 2;
+    flex: 1;
+    font-size: 16px;
+}
+
+
+/*  Line seperating blog post*/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #E3BC9A;
+    margin: 1em 0;
+    padding: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* blogpost */
+
+.blogpost {
+    margin: auto;
+    padding-top: 110px;
+    margin-right: 75px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/* slideshow */
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides1,
+.mySlides2,
+.mySlides3,
+.mySlides4,
+.mySlides5,
+.mySlides6,
+.mySlides7,
+.mySlides8,
+.mySlides9,
+.mySlides10,
+.mySlides11,
+.mySlides12,
+.mySlides13,
+.mySlides14,
+.mySlides15,
+.mySlides16,
+.mySlides17 {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    width: 50%;
+    position: relative;
+    margin: 150px;
+    margin-right: 50px;
+    float: left;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a grey background color */
+
+.prev:hover,
+.next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+
+/* homepage slideshow */
+
+
+/* Slideshow container */
+
+.slideshow-container-homepage {
+    width: 50%;
+    position: relative;
+    margin: 70px;
+    float: left;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.latestpostentry {
+    margin: auto;
+    padding-top: 40px;
+    margin-right: 75px;
+}
+
+
+/* font */
+
+h2 {
+    font-size: 30px;
+    color: #E3BC9A;
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+@media (max-width: 600px) {
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 2px solid #E3BC9A;
+        margin: 1em 0;
+        padding: 0;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+    }
+    /* main page, first row of week boxes. Will go under each other when page is smaller */
+    .row1 {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+    /* main page, second row of week boxes. Will go under each other when page is smaller */
+    .row2 {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+    /* main page, third row of week boxes. Will go under each other when page is smaller */
+    .row3 {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+    .Weekcontainer {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+    .blogpost {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .latestpostentry {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 300px;
+    }
+    /* Slideshow container */
+    .slideshow-container {
+        width: 100%;
+        position: relative;
+        margin: 150px;
+        margin-left: 0px;
+        float: left;
+    }
+    .slideshow-container-homepage {
+        width: 100%;
+        position: relative;
+        margin: 150px;
+        margin-left: 0px;
+        float: left;
+    }
+    .sidenav {
+        display: none;
+    }
+    /* nav bar */
+    .topnav {
+        overflow: hidden;
+        background-color: #EBCAA3;
+        padding-top: 40px;
+    }
+    /* nav bar */
+    .topnav a {
+        text-align: center;
+        color: white;
+        text-align: center;
+        margin-right: 30px;
+        margin-top: 30px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    /* nav bar hover effect */
+    .topnav a:hover {
+        background-color: white;
+        color: black;
+    }
+    /* nav bar */
+    @media screen and (max-width: 768px) {
+        body {
+            overflow-x: hidden;
+        }
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        nav .nav-links {
+            position: absolute;
+            right: 0;
+            height: 90vh;
+            top: 10vh;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            background-color: #EBCAA3;
+            transform: translateX(100%);
+            transition: all .8s ease-in-out;
+        }
+        nav .nav-links li {
+            opacity: 0;
+        }
+        nav .nav-links li a {
+            color: #ecf0f1;
+        }
+    }
+    nav .burger {
+        cursor: pointer;
+        display: none;
+    }
+    nav .burger div {
+        width: 33px;
+        height: 4px;
+        margin: 5px;
+        background-color: #ecf0f1;
+        border-radius: 3px;
+        transition: transform .5s ease-in-out;
+    }
+    @media screen and (max-width: 768px) {
+        nav .burger {
+            display: block;
+        }
+    }
+    .nav-active {
+        transform: translateX(0) !important;
+    }
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px) !important;
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px) !important;
+    }
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
