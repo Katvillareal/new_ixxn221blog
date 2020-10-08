@@ -8,7 +8,7 @@ body {
 /* font */
 
 h3 {
-    color: #E3BC9A;
+    color: #d4b999;
 }
 
 
@@ -37,7 +37,8 @@ nav {
     padding-right: 20px;
     text-transform: capitalize;
     min-height: 10vh;
-    background-color: #EBCAA3;
+    background-color: #b48a57;
+    ;
 }
 
 nav .nav-links {
@@ -75,57 +76,57 @@ nav .nav-links a {
 
 #wk1 {
     top: 80px;
-    background-color: #EBCAA3;
+    background-color: #d4b999;
 }
 
 #wk2 {
     top: 130px;
-    background-color: #EBCAA3;
+    background-color: #d4b999;
 }
 
 #wk3 {
     top: 180px;
-    background-color: #EBCAA3;
+    background-color: #d4b999;
 }
 
 #wk4 {
     top: 230px;
-    background-color: #EBCAA3;
+    background-color: #d4b999;
 }
 
 #wk5 {
     top: 280px;
-    background-color: #EBCAA3;
+    background-color: #d4b999;
 }
 
 #wk6 {
     top: 330px;
-    background-color: #EBCAA3;
+    background-color: #d4b999;
 }
 
 #wk7 {
     top: 380px;
-    background-color: #EBCAA3;
+    background-color: #d4b999;
 }
 
 #wk8 {
     top: 430px;
-    background-color: #EBCAA3
+    background-color: #d4b999
 }
 
 #wk9 {
     top: 480px;
-    background-color: #EBCAA3;
+    background-color: #d4b999;
 }
 
 #wk10 {
     top: 530px;
-    background-color: #EBCAA3;
+    background-color: #d4b999;
 }
 
 #wk11 {
     top: 580px;
-    background-color: #EBCAA3;
+    background-color: #d4b999;
 }
 
 
@@ -167,7 +168,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 2px solid #E3BC9A;
+    border-top: 2px solid #b48a57;
     margin: 1em 0;
     padding: 0;
     width: 90%;
@@ -211,7 +212,8 @@ p {
 .mySlides14,
 .mySlides15,
 .mySlides16,
-.mySlides17 {
+.mySlides17,
+.mySlides18 {
     display: none
 }
 
@@ -394,7 +396,7 @@ h2 {
     /* nav bar */
     .topnav {
         overflow: hidden;
-        background-color: #EBCAA3;
+        background-color: #f6dcbd;
         padding-top: 40px;
     }
     /* nav bar */
@@ -433,7 +435,7 @@ h2 {
             align-items: center;
             justify-content: space-around;
             flex-direction: column;
-            background-color: #EBCAA3;
+            background-color: #f6dcbd;
             transform: translateX(100%);
             transition: all .8s ease-in-out;
         }
