@@ -4,6 +4,20 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.dark {
+    float: left;
+    margin-left: -615px;
+    margin-top: 0px;
+}
+
+
+/* dark mode */
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 
 /* font */
 
@@ -75,57 +89,57 @@ nav .nav-links a {
 }
 
 #wk1 {
-    top: 80px;
-    background-color: #d4b999;
-}
-
-#wk2 {
     top: 130px;
     background-color: #d4b999;
 }
 
-#wk3 {
+#wk2 {
     top: 180px;
     background-color: #d4b999;
 }
 
-#wk4 {
+#wk3 {
     top: 230px;
     background-color: #d4b999;
 }
 
-#wk5 {
+#wk4 {
     top: 280px;
     background-color: #d4b999;
 }
 
-#wk6 {
+#wk5 {
     top: 330px;
     background-color: #d4b999;
 }
 
-#wk7 {
+#wk6 {
     top: 380px;
     background-color: #d4b999;
 }
 
-#wk8 {
+#wk7 {
     top: 430px;
+    background-color: #d4b999;
+}
+
+#wk8 {
+    top: 480px;
     background-color: #d4b999
 }
 
 #wk9 {
-    top: 480px;
-    background-color: #d4b999;
-}
-
-#wk10 {
     top: 530px;
     background-color: #d4b999;
 }
 
-#wk11 {
+#wk10 {
     top: 580px;
+    background-color: #d4b999;
+}
+
+#wk11 {
+    top: 630px;
     background-color: #d4b999;
 }
 
@@ -153,7 +167,6 @@ nav .nav-links a {
 /* about me description */
 
 .aboutme {
-    background-color: white;
     margin: 20px;
     padding: 20px;
     order: 2;
@@ -435,7 +448,7 @@ h2 {
             align-items: center;
             justify-content: space-around;
             flex-direction: column;
-            background-color: #f6dcbd;
+            background-color: #b48a57;
             transform: translateX(100%);
             transition: all .8s ease-in-out;
         }
