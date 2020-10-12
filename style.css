@@ -15,7 +15,7 @@ body {
 
 .dark-mode {
     background-color: black;
-    color: white;
+    color: #d4b999;
 }
 
 
@@ -89,57 +89,62 @@ nav .nav-links a {
 }
 
 #wk1 {
-    top: 130px;
+    top: 102px;
     background-color: #d4b999;
 }
 
 #wk2 {
-    top: 180px;
+    top: 152px;
     background-color: #d4b999;
 }
 
 #wk3 {
-    top: 230px;
+    top: 202px;
     background-color: #d4b999;
 }
 
 #wk4 {
-    top: 280px;
+    top: 252px;
     background-color: #d4b999;
 }
 
 #wk5 {
-    top: 330px;
+    top: 302px;
     background-color: #d4b999;
 }
 
 #wk6 {
-    top: 380px;
+    top: 352px;
     background-color: #d4b999;
 }
 
 #wk7 {
-    top: 430px;
+    top: 402px;
     background-color: #d4b999;
 }
 
 #wk8 {
-    top: 480px;
+    top: 452px;
     background-color: #d4b999
 }
 
 #wk9 {
-    top: 530px;
+    top: 502px;
     background-color: #d4b999;
 }
 
 #wk10 {
-    top: 580px;
+    top: 552px;
     background-color: #d4b999;
 }
 
 #wk11 {
-    top: 630px;
+    top: 602px;
+    background-color: #d4b999;
+}
+
+#wk12 {
+    top: 652px;
     background-color: #d4b999;
 }
 
@@ -194,7 +199,7 @@ hr {
 
 .blogpost {
     margin: auto;
-    padding-top: 110px;
+    padding-top: 160px;
     margin-right: 75px;
 }
 
@@ -287,8 +292,17 @@ img {
 .slideshow-container-homepage {
     width: 50%;
     position: relative;
-    margin: 70px;
+    margin: 50px;
     float: left;
+}
+
+
+/* latest post entry */
+
+.latestpostentry {
+    margin: auto;
+    padding-top: 20px;
+    margin-right: 75px;
 }
 
 
@@ -324,15 +338,6 @@ img {
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/* latest post entry */
-
-.latestpostentry {
-    margin: auto;
-    padding-top: 40px;
-    margin-right: 75px;
 }
 
 
