@@ -1,4 +1,4 @@
-// dark mode
+// dark modee
 
 function myFunction() {
     var element = document.body;
