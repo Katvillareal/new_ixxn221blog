@@ -199,7 +199,7 @@ hr {
 
 .blogpost {
     margin: auto;
-    padding-top: 160px;
+    padding-top: 100px;
     margin-right: 75px;
 }
 
@@ -245,7 +245,7 @@ img {
 .slideshow-container {
     width: 50%;
     position: relative;
-    margin: 150px;
+    margin: 100px;
     margin-right: 50px;
     float: left;
 }
